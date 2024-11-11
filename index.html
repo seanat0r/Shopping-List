@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+
+    <link rel="stylesheet" href="sytlesheet.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
+    <nav>
+        <h1>Shopping List</h1>
+    </nav>
+    <main>
+        <article>
+          <div class="addItem">
+              <p class="addItemText">Enter new Item: </p>
+              <input id="textField" type="text" placeholder="type item ...">
+              <button id="btn">Add item</button>
+          </div>
+            <div class="shoppingListParent">
+                <ul id="shoppingList">
+                    <!-- Via js adding item to the list -->
+                </ul>
+            </div>
+        </article>
+        <footer>
+            Source code <a href="https://github.com/seanat0r/Shopping-List">here</a>
+        </footer>
+    </main>
 </body>
 </html>
